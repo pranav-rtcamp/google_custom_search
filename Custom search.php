@@ -1,6 +1,6 @@
 /* Will require key(server_key) and cx(search engine id from control panel) */ 
 
-$url = "https://www.googleapis.com/customsearch/v1?key=<my_key>&cx=<cx>&q=test&output=json&num=10&start=0';
+$url = "https://www.googleapis.com/customsearch/v1?key=<my_key>&cx=<cx>&q=test&output=json&num=10&start=0";
 $p = wp_remote_get($url);
                 
 if( json_decode($p['response']['code']) == 200 ){    
